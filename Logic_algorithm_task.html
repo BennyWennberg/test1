@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D* Algorithm -- Roth (1966)
+    </title>
+
+    <link rel="stylesheet" href="styles\header.css">
+    <link rel="stylesheet" href="styles\main.css">
+    <link rel="stylesheet" href="styles\general.css">
+    <link rel="stylesheet" href="styles\scaling.css">
+
+</head>
+<body style="min-width:1000px; width: auto !important;  width:1000px;" >
+    <div class="header">
+        <div class="left-section">
+            <button class="button-title">
+                <a style="color: white; font-size: 25px; margin-left: unset;" class="space" href="Definition_roth1966.html">D* Algorithm -- Roth(1966)</a>
+            </button>
+        </div>
+        <div class="middle-section">
+            <button class="button_title">
+                <a href="Definition_roth1966.html">Definition</a>
+            </button>
+            <button class="button_title">
+                <a href="Logic_algorithm_task.html">Logic</a>
+            </button>
+            <button class="button_title">
+                <a href="Rules_rules.html">Rules</a>
+            </button>
+            <button class="button_title">
+                <a href="Example_sa0.html">Examples</a>
+            </button>
+            <button class="button_title">
+                <a href="easy_1.html">Tests</a>
+            </button>
+        </div>
+        <div class="right-section">
+        </div>
+    </div>
+    <main class="main">
+        <div class="row">
+            <div id="content_left" class="box" style="width: 66%;"> 
+                <!-- Text Inhalt-->
+            <h4> Task the algorithm faces</h4>
+            <h5> Meaningfulness of the D-Algortihm</h5>
+            <p> 
+                Inputs are generated procedurally
+            </p>
+            <p> 
+                takes the creativity out of testing, allows a computer to do it no longer necessary to test by hand
+            </p>
+
+            <h5> Problem </h5>
+            <p>
+                Faults in electronic circuits are modeled using fault models, of which the Stuck-At fault model is the most commonly used. It is assumed that faults occur and  lines get permanently stuck to 0 or 1.
+            </p>
+            <p>
+                There are two basic principles in testing: Controllability and Observability. In a combined circuit there are also several nodes, which can all have a Stuck-At fault (for simplicity only one at a time).
+                
+            </p>
+            <p>
+                Now, if you want to detect a fault in a circuit, you must be able to activate these fault and observe it at them same time (you cannot detect a fault if the circuit ends up working correctly, i.e., the fault does not propagate to the output). For this purpose, a suitable test pattern must be generated.
+            </p>
+            <p>
+                In the D-algorithm (Roth, 1966) one tries to make the error observable at the output by suitable assignment at the input, and not to overwrite the error.
+            </p>
+            <br>
+            <p>But then why are we learning it?</p>
+            <br>
+            <p> 
+                The answer is that we human beings have IQ, and hence we can solve methods like path sensitization intuitively. A computer doesn’t the necessary intelligence yet. The D algorithm takes the creativity out of test generation and allows a computer to do it.  
+            </p>
+            </div>
+            <div id="sidebar_right" class="box">
+                <h3>Tabel of Contents</h3>
+                <p class='text-muted'>The D-Algorithm (D-ALG) was developed by Roth in 1966
+                <div class="sidebar">
+                    <li class="get_text_indented">Definiton 
+                        <br>
+                        <a class="button_sidebar" href="Definition_roth1966.html">Roth (1966)</a>
+                    </li>
+                    <li class="get_text_indented">Logic
+                        <br>
+                        <a class="button_sidebar" href="Logic_algorithm_task.html"> Algorithm Task</a>
+                        <a class="button_sidebar" href="Logic_algorithm_pattern.html"> Algorithm Pattern</a>
+                    </li> 
+                    <li class="get_text_indented">Rules
+                        <br>
+                        <a class="button_sidebar" href="Rules_rules.html">Rules</a>
+                        <a class="button_sidebar" href="Rules_backtracking.html"> Backtracking</a>
+                    </li>
+                    <li class="get_text_indented">Example
+                        <br>
+                        <a class="button_sidebar" href="Example_sa0.html"> SA0</a>
+                        <a class="button_sidebar" href="Example_sa1.html"> SA1</a>
+                        <a class="button_sidebar" href="Example_backtracking.html"> Backtracking</a>
+                    </li>
+                    <li class="get_text_indented">Exercise
+                        <br>
+                        <a class="button_sidebar" href="easy_1.html"> Easy</a>
+                        <a class="button_sidebar"> Middle</a>
+                        <a class="button_sidebar"> Hard</a>
+                    </li>
+                </div>
+                <footer>
+                    <p>@2023 Bachelorproject Benny Wennberg </p>
+                </footer>
+            </div>  
+        </div>   
+    
+
+    </main> 
+</body>
+</html>

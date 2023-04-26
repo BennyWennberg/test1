@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D* Algorithm -- Roth (1966)
+    </title>
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="scaling.css">
+
+</head>
+<body style="min-width:1000px; width: auto !important;  width:1000px;" >
+    <div class="header">
+        <div class="left-section">
+            <button class="button-title">
+                <a style="color: white; font-size: 25px; margin-left: unset;" class="space" href="Definition_roth1966.html">D* Algorithm -- Roth(1966)</a>
+            </button>
+        </div>
+        <div class="middle-section">
+            <button class="button_title">
+                <a href="Definition_roth1966.html">Definition</a>
+            </button>
+            <button class="button_title">
+                <a href="Logic_algorithm_task.html">Logic</a>
+            </button>
+            <button class="button_title">
+                <a href="Rules_rules.html">Rules</a>
+            </button>
+            <button class="button_title">
+                <a href="Example_sa0.html">Examples</a>
+            </button>
+            <button class="button_title">
+                <a href="easy_1.html">Tests</a>
+            </button>
+        </div>
+        <div class="right-section">
+        </div>
+    </div>
+    <main class="main">
+        <div class="row">
+            <div id="content_left" class="box" style="width: 66%;"> 
+                <div style="margin-left: 10px ;">
+                    <h2> D-Algorithm -- Roth(1966)</h2>
+                    <p>
+                        The D-Algorithm (D-ALG) was developed by Roth in 1966.
+                    </p>
+                    <p>
+                        Roth's D-Alorithm is a procedure which generates for a specific circuit and a "fault" associated with that circuit which detects the absence or presence of an malfunction in the circuit.
+                    </p>
+                    <br>
+                    <p>
+                        A fault is any change of a circuit which affects the functioning of that circuit
+                    </p>
+                    <p>
+                        In the D-Algorithm we describe one type of faults in the circuit, namely, the stuck-at faults. 
+                    </p>
+                    <p>
+                        Stuck-at-1 faults and stuck-at-0 faults can be described as pseudogates on the line which have one input and one output.
+                    </p>
+                    <p>
+                        On normal mode these "faults" passes the proper signal through and in fault mode passes the negation signal.
+                    </p>
+                    <br>
+                    <img style="max-width: 100%;" src="picture/fault_description_sa0_sa1.png">
+                    <br>
+                    <h5>
+                        General goal of Roth's D-Alorithm:
+                    </h5>
+                    <p>
+                        The general goal of this algorithm is that an integrated circuit and a fault that can occur in the circuit.
+                        For this circuit, the algorithm locates a fault, which detects the generated output.
+                    </p>
+                    <p>
+                        That means, with a fault pseudogate, a given set of inputs detects the fault if the output differ from the expectet outputs.
+                    </p>
+            
+                    </div>   
+            </div>
+            <div id="sidebar_right" class="box">
+                <h3>Tabel of Contents</h3>
+                <p class='text-muted'>The D-Algorithm (D-ALG) was developed by Roth in 1966
+                <div class="sidebar">
+                    <li class="get_text_indented">Definiton 
+                        <br>
+                        <a class="button_sidebar" href="Definition_roth1966.html">Roth (1966)</a>
+                    </li>
+                    <li class="get_text_indented">Logic
+                        <br>
+                        <a class="button_sidebar" href="Logic_algorithm_task.html"> Algorithm Task</a>
+                        <a class="button_sidebar" href="Logic_algorithm_pattern.html"> Algorithm Pattern</a>
+                    </li> 
+                    <li class="get_text_indented">Rules
+                        <br>
+                        <a class="button_sidebar" href="Rules_rules.html">Rules</a>
+                        <a class="button_sidebar" href="Rules_backtracking.html"> Backtracking</a>
+                    </li>
+                    <li class="get_text_indented">Example
+                        <br>
+                        <a class="button_sidebar" href="Example_sa0.html"> SA0</a>
+                        <a class="button_sidebar" href="Example_sa1.html"> SA1</a>
+                        <a class="button_sidebar" href="Example_backtracking.html"> Backtracking</a>
+                    </li>
+                    <li class="get_text_indented">Exercise
+                        <br>
+                        <a class="button_sidebar" href="easy_1.html"> Easy</a>
+                        <a class="button_sidebar"> Middle</a>
+                        <a class="button_sidebar"> Hard</a>
+                    </li>
+                </div>
+                <footer>
+                    <p>@2023 Bachelorproject Benny Wennberg </p>
+                </footer>
+            </div>  
+        </div>   
+    
+
+    </main> 
+</body>
+</html>

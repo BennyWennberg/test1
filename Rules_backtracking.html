@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D* Algorithm -- Roth (1966)
+    </title>
+
+    <link rel="stylesheet" href="styles\header.css">
+    <link rel="stylesheet" href="styles\main.css">
+    <link rel="stylesheet" href="styles\general.css">
+    <link rel="stylesheet" href="styles\scaling.css">
+
+</head>
+<body style="min-width:1000px; width: auto !important;  width:1000px;" >
+    <div class="header">
+        <div class="left-section">
+            <button class="button-title">
+                <a style="color: white; font-size: 25px; margin-left: unset;" class="space" href="Definition_roth1966.html">D* Algorithm -- Roth(1966)</a>
+            </button>
+        </div>
+        <div class="middle-section">
+            <button class="button_title">
+                <a href="Definition_roth1966.html">Definition</a>
+            </button>
+            <button class="button_title">
+                <a href="Logic_algorithm_task.html">Logic</a>
+            </button>
+            <button class="button_title">
+                <a href="Rules_rules.html">Rules</a>
+            </button>
+            <button class="button_title">
+                <a href="Example_sa0.html">Examples</a>
+            </button>
+            <button class="button_title">
+                <a href="easy_1.html">Tests</a>
+            </button>
+        </div>
+        <div class="right-section">
+        </div>
+    </div>
+    <main class="main">
+        <div class="row">
+            <div id="content_left" class="box" style="width: 66%;"> 
+                <!-- Text Inhalt-->
+                <h4>Backtracking</h4>
+                <p>
+                  Backtracking is a technique for a sequence of alternatives to achieve a desired solution. 
+                </p>
+                <p>
+                  The goal of backtracking is to consider every possible combination to solve an optimization problem.  
+                </p>
+                <p>
+                  If a decision causes inconsistency, then we need to backtrack to solve the circuit.
+                </p>
+                <p>
+                  Undo the last decision and select an other possible Way to solve it.
+                  Every decision can be made only once in exactly that order.    
+                </p>
+                <p>
+                 This means either select another gate from one of the frontiers or decide inputs in another way.
+                </p>
+                <h4>   
+                  Implications
+                </h4>
+                <p>
+                 The implication in the D algorithm is that unknown values in the input lines are determined with a well-known set of values.
+                </p>
+                <h4>Foward Implication</h4>
+                <p>
+                  Determination of the output by known inputs values
+                </p>
+                <img class="picture_scale" src="picture/f-imp.png">
+                <h4>Backward Implication</h4>
+                <p>
+                  Determination of the input by known output value
+                </p>
+                <img class="picture_scale" src="picture/b-imp.png">
+                <div class="border_line_top"></div>
+                <p>In the D algorithm, we have two essential components:</p> 
+                <br>
+                <p> Check out this part of a combinational circuit for which ATPG is to be performed.</p>
+                <p> The blue gates are D-frontier while green gates are J-frontier.</p>        
+                <img style="height: 350px; width: 600px;" src="picture/frontier.png">
+                <h4>
+                  D-frontier: 
+                </h4>
+                <p>
+                  A set of gates whose output value is currently unknown, but have one or more D (or D’) at their inputs.
+                </p>
+                <h4>
+                  J-frontier:
+                </h4>
+                <p>
+                  A set of gates whose output value is assigned, but input values have not been decided yet.
+                </p>
+            </div>
+            <div id="sidebar_right" class="box">
+                <h3>Tabel of Contents</h3>
+                <p class='text-muted'>The D-Algorithm (D-ALG) was developed by Roth in 1966
+                <div class="sidebar">
+                    <li class="get_text_indented">Definiton 
+                        <br>
+                        <a class="button_sidebar" href="Definition_roth1966.html">Roth (1966)</a>
+                    </li>
+                    <li class="get_text_indented">Logic
+                        <br>
+                        <a class="button_sidebar" href="Logic_algorithm_task.html"> Algorithm Task</a>
+                        <a class="button_sidebar" href="Logic_algorithm_pattern.html"> Algorithm Pattern</a>
+                    </li> 
+                    <li class="get_text_indented">Rules
+                        <br>
+                        <a class="button_sidebar" href="Rules_rules.html">Rules</a>
+                        <a class="button_sidebar" href="Rules_backtracking.html"> Backtracking</a>
+                    </li>
+                    <li class="get_text_indented">Example
+                        <br>
+                        <a class="button_sidebar" href="Example_sa0.html"> SA0</a>
+                        <a class="button_sidebar" href="Example_sa1.html"> SA1</a>
+                        <a class="button_sidebar" href="Example_backtracking.html"> Backtracking</a>
+                    </li>
+                    <li class="get_text_indented">Exercise
+                        <br>
+                        <a class="button_sidebar" href="easy_1.html"> Easy</a>
+                        <a class="button_sidebar"> Middle</a>
+                        <a class="button_sidebar"> Hard</a>
+                    </li>
+                </div>
+                <footer>
+                  <p>@2023 Bachelorproject Benny Wennberg </p>
+              </footer>
+            </div>  
+        </div>   
+    </main> 
+</body>
+</html>

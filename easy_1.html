@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D* Algorithm -- Roth (1966)
+    </title>
+
+    <link rel="stylesheet" href="styles\header.css">
+    <link rel="stylesheet" href="styles\main.css">
+    <link rel="stylesheet" href="styles\general.css">
+    <link rel="stylesheet" href="styles\grid.css">
+
+
+</head>
+<body style="min-width:1000px; width: auto !important;  width:1000px;" >
+    <div class="header">
+        <div class="left-section">
+            <button class="button-title">
+                <a style="color: white; font-size: 25px; margin-left: unset;" class="space" href="Definition_roth1966.html">D* Algorithm -- Roth(1966)</a>
+            </button>
+        </div>
+        <div class="middle-section">
+            <button class="button_title">
+                <a href="Definition_roth1966.html">Definition</a>
+            </button>
+            <button class="button_title">
+                <a href="Logic_algorithm_task.html">Logic</a>
+            </button>
+            <button class="button_title">
+                <a href="Rules_rules.html">Rules</a>
+            </button>
+            <button class="button_title">
+                <a href="Example_sa0.html">Examples</a>
+            </button>
+            <button class="button_title">
+                <a href="easy_1.html">Tests</a>
+            </button>
+        </div>
+        <div class="right-section">
+        </div>
+    </div>
+    <main class="main">
+        <div class="row">
+            <div id="content_left" class="box" style="width: 66%; min-width: 550px;">
+                <!-- Text Inhalt-->
+            <div>
+                <h4>D*-Algorithm - Roth(1966) ~ Easy ( 1 | 2 )</h4> 
+                <p><strong>Guide:</strong></p>
+                <p>To solve this algorithm set the Stuck-At-Fault entries and follow the given algorithm. For this circuit, the algorithm finds the SA1 fault to be detected at the output. If you cannot solve the algorithm or the circuit is too difficult, please repeat the rules of the algorithm.</p>.
+                <p>For help, u can use  the "Hints" button 3 times otherwise reset the circuit with the "Reset" button. The algorithm has an anti-puzzle code. You can't guess any inputs or outputs or unexplained inputs or outputs. Please think before you ask for solutions</p>
+                <p>Follow the rules of the algorithm and use the "Solve" button if you want to compare your inputs.</p>
+            </div>
+            <div id="Schaltkreis"  class="gitter">
+                <div id="alle-dropwboxen" class="dropbox">
+                    <div id="a" class="overlay_dropdown"
+                        style=" margin-left: 110px ;">
+                        <select  id="dropdown_a">
+                            <option value="_">a</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="D">D</option>
+                            <option value="D'">D'</option>
+                        </select>
+                    </div>  
+                         <div id="b" class="overlay_dropdown"
+                            style=" margin-left: 235px ;">
+                            <select  id="dropdown_b">
+                                <option value="_">b</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="D">D</option>
+                                <option value="D'">D'</option>
+                            </select>
+                        </div> 
+                        <div id="c" class="overlay_dropdown"
+                            style=" margin-left: 360px ;">
+                            <select  id="dropdown_c">
+                                <option value="_">c</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="D">D</option>
+                                <option value="D'">D'</option>
+                            </select>
+                        </div> 
+        
+                        <div id="d" class="overlay_dropdown"
+                        style=" margin-left: 325px; margin-top: 100px;">
+                                <select  id="dropdown_d">
+                                    <option value="_">d</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="D">D</option>
+                                    <option value="D'">D'</option>
+                                </select>
+                        </div>
+                        <div id="e" class="overlay_dropdown"
+                                style="margin-left:290px;margin-top: 160px;width: 25px;">
+                                <select  id="dropdown_e">
+                                    <option value="_">e</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="D">D</option>
+                                    <option value="D'">D'</option>
+                                </select>
+                        </div>
+                        <div id="lout" class="overlay_dropdown"
+                                style="margin-left:260px;margin-top: 200px;width: 25px;">
+                                <select  id="dropdown_out">
+                                    <option value="_">out</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="D">D</option>
+                                    <option value="D'">D'</option>
+                                </select>
+                        </div>
+                        <div class="overlay_dropdown" 
+                        style= "margin-left:255px;
+                        margin-top: 110px;
+                        width: 100px;">
+                            <p style="font-size: 30px;color: rgb(188, 0, 0);"><span id="Sat" style="color: black; font-size: 20px;">SA1</span> &#10008;</p>
+                        </div>
+                </div>
+                <div class="four_grid_column">
+                    <div style="text-align: right;">
+                        a
+                    </div>
+                    <div style="text-align: right;">
+                        b
+                    </div>
+                    <div style="text-align: right;">
+                        c
+                    </div>
+                </div>
+                <div class="wires">
+                    <div>
+                        <canvas id="canvas1" width="125" height="100" ></canvas>
+                    </div>
+                    <div>
+                        <canvas id="canvas2" width="125" height="100" ></canvas>
+                    </div>
+                    <div>
+                        <canvas id="canvas3" width="125" height="100" ></canvas>
+                    </div>
+                    <div>
+                        <canvas id="canvas4" width="125" height="100" ></canvas>
+                    </div>
+                </div>
+                <div class="wires">
+                    <div>
+                        <canvas id="canvas5" width="125" height="100" ></canvas>
+                    </div>
+                    <div>
+                        <canvas id="canvas6" width="125" height="100" ></canvas>
+                    </div>
+                    <div>
+                        <canvas id="canvas7" width="125" height="100" ></canvas>
+                    </div>                        <div>
+                        <canvas id="canvas8" width="125" height="100" ></canvas>
+                    </div>
+                </div>
+                <div class="prev_next">
+                    <button style="font-size: 25px; color: unset;" onclick="give_one_solution()"> hint</button>
+                    <button style="font-size: 25px; color: unset;" onclick=""><a href="easy_1.html" style="color: unset;" >reset</a></button>
+                    <button onclick="decreasePicture()" style="color: black;"> <span>&#129092;</span> </button>
+                    <button onclick="increasePicture()" style="color: black;"> <span>&#129094;</span> </button>
+                    <button style="font-size: 25px; color: unset;" onclick="solve_path_byStudent(), get_Color_Correction(), give_values_to_HTML()">solve</button>
+                </div>
+
+            <div class="border_line_bottom"><br>
+                <p>The algorithm compares your given inputs with the algortihm. A path will turn green, if u detect the path right and it will turn red if you calculate it wrong. </p>
+                <br>
+                <p> If you failed the circuit after 10 trys or 25 faults, the solution of this circuit will be shown below.</p>
+            <div class="two_grid_column" style="background-color: unset; text-align: unset;">
+                <div class="info_site" style="min-width: 250px">
+                    <div style="height: 200px;">
+                        <h4><u>Error statistics</u></h4>
+                            <form class="hidden" id="show_info">
+                            Faults Counter :<p id="faultsID"></p> 
+                            <br>
+                            Trys Counter: <p id="trysID"></p>
+                            <br>
+                            Hints Counter: <p id="hintsID"></p>
+                            <br>
+                        </form>
+                    </div>
+                </div>
+                <div >
+                    <h4><u>Error Message</u></h4>
+                    <p id="error_message" class="error_message" style="list-style: unset;"></p>
+                    <br>
+                </div>
+            </div>
+            </div>
+          
+            <div id="solution" class="hide">
+                <br>
+                <div class="three_grid_column">
+                    <div>
+                       <h5 style="margin: 5px;">a</h5> 
+                    </div>
+                    <div>
+                        <h5 style="margin: 5px;">b</h5>
+                    </div>
+                    <div>
+                        <h5 style="margin: 5px;">c</h5>
+                    </div>
+                </div>
+                <p>
+                    Inputs:
+                </p>
+                
+                <div class="three_grid_column" style="background-color: unset;">
+                    <div id="bla_a" class="sort">
+                        _
+                    </div>
+                    <div id="bla_b" class="sort">
+                        _
+                    </div>
+                    <div id="bla_c" class="sort">
+                        _
+                    </div>
+                </div>
+                <p>
+                    Student's Inputs: 
+                </p>
+                
+                <div class="three_grid_column" style="background-color: unset">
+                    <div id="blaa" class="sort">
+                        _
+                    </div>
+                    <div id="blab" class="sort">
+                        _
+                    </div>
+                    <div id="blac" class="sort">
+                        _
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="two_grid_column">
+                    <div class="sort">
+                        <h5 style="margin: 5px;">d</h5>
+                    </div>
+                    <div class="sort">
+                        <h5 style="margin: 5px;">e</h5>
+                    </div>
+                </div>
+                <p>
+                    SA1
+                </p>
+                
+                <div class="two_grid_column" style="background-color: unset">
+                    <div id="bla_d" class="sort">
+                        _
+                    </div>
+                    <div id="bla_e" class="sort">
+                        _
+                    </div>
+                </div>
+                <p>
+                    Student's SA1 Output
+                </p>
+                
+                <div class="two_grid_column" style="background-color: unset">
+                    <div id="blad" class="sort">
+                        _
+                    </div>
+                    <div id="blae" class="sort">
+                        _
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="one_grid_column">
+                    <div class="sort">
+                        <h5 style="margin: 5px;">Out</h5>
+                    </div>
+                </div>
+                <p>
+                    Calculate Outputs:
+                </p>
+                <div class="one_grid_column" style="background-color: unset;">
+                    <div id="bla_out">
+                        _
+                    </div>
+                </div>
+                <p>
+                    Student's Output:
+                </p>
+                <div class="one_grid_column" style="background-color: unset;">
+
+                        <div id="blaout" class="sort" >
+                            _
+                        </div>
+                </div>
+            </div>
+            
+
+        </div>
+            <br>
+            </div>
+            <div id="sidebar_right" class="box">
+                <h3>Tabel of Contents</h3>
+                <p class='text-muted'>The D-Algorithm (D-ALG) was developed by Roth in 1966
+                <div class="sidebar">
+                    <li class="get_text_indented">Definiton 
+                        <br>
+                        <a class="button_sidebar" href="Definition_roth1966.html">Roth (1966)</a>
+                    </li>
+                    <li class="get_text_indented">Logic
+                        <br>
+                        <a class="button_sidebar" href="Logic_algorithm_task.html"> Algorithm Task</a>
+                        <a class="button_sidebar" href="Logic_algorithm_pattern.html"> Algorithm Pattern</a>
+                    </li> 
+                    <li class="get_text_indented">Rules
+                        <br>
+                        <a class="button_sidebar" href="Rules_rules.html">Rules</a>
+                        <a class="button_sidebar" href="Rules_backtracking.html"> Backtracking</a>
+                    </li>
+                    <li class="get_text_indented">Example
+                        <br>
+                        <a class="button_sidebar" href="Example_sa0.html"> SA0</a>
+                        <a class="button_sidebar" href="Example_sa1.html"> SA1</a>
+                        <a class="button_sidebar" href="Example_backtracking.html"> Backtracking</a>
+                    </li>
+                    <li class="get_text_indented">Exercise
+                        <br>
+                        <a class="button_sidebar" href="easy_1.html"> Easy</a>
+                        <a class="button_sidebar"> Middle</a>
+                        <a class="button_sidebar"> Hard</a>
+                    </li>
+                </div>
+                <footer>
+                    <p>@2023 Bachelorproject Benny Wennberg </p>
+                </footer>
+            </div>  
+        </div>   
+    </main> 
+    <script src="scripts/createEasy.js"></script>
+</body>
+</html>

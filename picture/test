@@ -1,0 +1,192 @@
+    //Independent Inputs
+    // declare A
+    if(blaa.innerText == "D") {
+        error_message_collection(2);
+        bla_a.innerText = "D"
+    } else if(blaa.innerText == "D'") {
+        error_message_collection(2);
+        bla_a.innerText = "D'"
+    } else if(blaa.innerText == "0") {
+        error_message_collection(0);
+        bla_a.innerText = "0"
+    } else if(blaa.innerText == "1") {
+        bla_a.innerText = "1"
+        error_message_collection(0);
+    }
+    //Independent Inputs
+    // declare A
+    if(blaa.innerText == "D") {
+        error_message_collection(2);
+        bla_a.innerText = "D"
+    } else if(blaa.innerText == "D'") {
+        error_message_collection(2);
+        bla_a.innerText = "D'"
+    } else if(blaa.innerText == "0") {
+        error_message_collection(0);
+        bla_a.innerText = "0"
+    } else if(blaa.innerText == "1") {
+        bla_a.innerText = "1"
+        error_message_collection(0);
+    }
+
+    // declare C
+    if(blac.innerText == "0") {
+        bla_c.innerText = "0"
+        error_message_collection(0);
+    } else if(blac.innerText == "1") {
+        bla_c.innerText = "1"
+        error_message_collection(0);
+    } else if(blac.innerText == "D") {
+        bla_c.innerText = "D"
+        error_message_collection(2);
+    } else if(blac.innerText == "D'") {
+        bla_c.innerText = "D'"
+        error_message_collection(2);
+    }
+
+     // declare D
+     if(blad.innerText == "0") {
+        bla_d.innerText = "0"
+        error_message_collection(0);
+    } else if(blad.innerText == "1") {
+        bla_d.innerText = "1"
+        error_message_collection(0);
+    } else if(blad.innerText == "D") {
+        bla_d.innerText = "D"
+        error_message_collection(2);
+    } else if(blad.innerText == "D'") {
+        bla_d.innerText = "D'"
+        error_message_collection(2);
+    }
+
+
+    // declare D with B and C
+    if((blab.innerText == "0") && (blac.innerText == "0")) {
+        blad.innerText = "1";
+    } else if ((blab.innerText == "0") && (blac.innerText == "1")) {
+        blad.innerText = "0";
+    } else if((blab.innerText == "0") && (blac.innerText == "D")) {
+        blad.innerText = "1";
+    } else if ((blab.innerText == "0") && (blac.innerText == "D'")) {
+        blad.innerText = "1";
+
+    } else if((blab.innerText == "1") && (blae.innerText == "0")) {
+        blad.innerText = "1";
+    } else if ((blab.innerText == "1") && (blae.innerText == "1")) {
+        blad.innerText = "0";
+    } else if((blab.innerText == "1") && (blae.innerText == "D")) {
+        blad.innerText = "D'";
+    } else if ((blab.innerText == "1") && (blae.innerText == "D'")) {
+        bla_.innerText = "D";
+
+    } else if((blab.innerText == "D") && (blac.innerText == "0")) {
+        blad.innerText = "1";
+    } else if((blab.innerText == "D") && (blac.innerText == "1")) {
+        blad.innerText = "D'";
+    } else if ((blab.innerText == "D") && (blac.innerText == "D")) {
+        blad.innerText = "D'"; 
+    } else if((blab.innerText == "D") && (blac.innerText == "D'")) {
+        blad.innerText = "1";
+
+    } else if ((blab.innerText == "D'") && (blac.innerText == "0")) {
+        blad.innerText = "1";
+    }else if((blab.innerText == "D'") && (blac.innerText == "1")) {
+        blad.innerText = "D";
+    } else if ((blab.innerText == "D'") && (blac.innerText == "D")) {
+        blad.innerText = "1";
+    } else if((blab.innerText == "D'") && (blac.innerText == "D'")) {
+        blad.innerText = "D";
+    }
+    
+    // declare Gates from SA1
+    if(blad.innerText == "0") {
+        blae.innerText ="D'";
+        error_message_collection(0);
+    } else if(blad.innerText == "1") {
+        blae.innerText = "D";
+        error_message_collection(0);
+    } else if(blad.innerText == "D") {
+        error_message_collection(5);
+        error_message_collection(2);
+    } else if(blad.innerText == "D'") {
+        error_message_collection(5);
+        error_message_collection(2);
+    }
+    
+    // declare E
+    if(blae.innerText == "0") {
+        error_message_collection(5);
+    } else if(blae.innerText == "1") {
+        error_message_collection(5);
+    } else if(blae.innerText == "D") {
+        error_message_collection(0);
+    } else if(blae.innerText == "D'") {
+        error_message_collection(0);
+    }
+
+
+
+
+
+
+    // declare output
+    if((blaa.innerText == "0") && (blae.innerText == "0")) {
+        bla_out.innerText = "1";
+        error_message_collection(3);
+        error_message_collection(4);
+    } else if ((blaa.innerText == "0") && (blae.innerText == "1")) {
+        bla_out.innerText = "1";
+        error_message_collection(3);
+        error_message_collection(4);
+    } else if((blaa.innerText == "0") && (blae.innerText == "D")) {
+        bla_out.innerText = "1";
+        error_message_collection(4);
+    } else if ((blaa.innerText == "0") && (blae.innerText == "D'")) {
+        bla_out.innerText = "1";
+        error_message_collection(4);
+
+
+    } else if((blaa.innerText == "1") && (blae.innerText == "0")) {
+        bla_out.innerText = "1";
+        error_message_collection(3);
+    } else if ((blaa.innerText == "1") && (blae.innerText == "1")) {
+        bla_out.innerText = "0";
+        error_message_collection(3);
+    } else if((blaa.innerText == "1") && (blae.innerText == "D")) {
+        bla_out.innerText = "D'";
+        error_message_collection(0);
+    } else if ((blaa.innerText == "1") && (blae.innerText == "D'")) {
+        bla_out.innerText = "D";
+        error_message_collection(0);
+
+
+    } else if((blaa.innerText == "D") && (blae.innerText == "0")) {
+        bla_out.innerText = "1";
+        error_message_collection(3);
+        error_message_collection(4);
+    } else if((blaa.innerText == "D") && (blae.innerText == "1")) {
+        bla_out.innerText = "D'";
+        error_message_collection(3);
+    } else if ((blaa.innerText == "D") && (blae.innerText == "D")) {
+        bla_out.innerText = "D'";
+        error_message_collection(0);
+    } else if((blaa.innerText == "D") && (blae.innerText == "D'")) {
+        bla_out.innerText = "1";
+        error_message_collection(4);
+
+
+
+    } else if ((blaa.innerText == "D'") && (blae.innerText == "0")) {
+        bla_out.innerText = "1";
+        error_message_collection(3);
+        error_message_collection(4);
+    }else if((blaa.innerText == "D'") && (blae.innerText == "1")) {
+        bla_out.innerText = "D";
+        error_message_collection(3);
+    } else if ((blaa.innerText == "D'") && (blae.innerText == "D")) {
+        bla_out.innerText = "1";
+        error_message_collection(4);
+    } else if((blaa.innerText == "D'") && (blae.innerText == "D'")) {
+        bla_out.innerText = "D";
+        error_message_collection(0);
+    }

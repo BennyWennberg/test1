@@ -1,0 +1,101 @@
+body {
+    background: #fafafa;
+    color: #000000;
+    margin-top: 5rem;
+    min-height: 950px;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul, a{
+    color: #444444;
+    font-family:inherit;
+    line-height:1.2;
+    font-family: Arial;
+}
+h3{
+    font-size:1.75rem
+}
+h4{
+    font-size:1.5rem
+}
+h5{
+    font-size:1.25rem
+}
+h6{
+    font-size:1rem
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 150%;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a { 
+    color:rgb(208, 208, 208); 
+    text-decoration: none;   
+    font-family:inherit; 
+    font-weight:500;
+
+}
+
+a:hover { 
+    color: white;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: rgba(255,255,255,.5);
+}
+
+img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.p_font {
+    text-align: center;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 330px){
+  html{
+      width: 330px;
+      overflow: auto;
+  }
+}
+@media screen and (max-height: 400px){
+  html{
+      height: 400px;
+      overflow: auto;
+  }
+}
+
+/* layout settings */
+.border_line_top {
+    border-top-width:1px;
+    border-top-color: black;
+    border-top-style: solid;
+    margin-bottom: 25px;
+  }
+  
+  .border_line_bottom {
+    border-bottom-width:2px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    margin-top: 25px;
+  }
+
+  @media (min-width:550px){
+    .border_line_bottom{
+        width: 500px;
+    }
+}
